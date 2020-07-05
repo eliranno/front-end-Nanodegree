@@ -5,14 +5,18 @@
 
 html, body {
     width: 100%;
-    height: 100%;
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
 }
 
 #grid-layout{
+	margin: 0px;
+	padding: 0px;
 	display: grid;
 	grid-gap: 6px;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 60px 1fr 1fr 1fr 1fr 30px;	
+	grid-template-rows: 60px 1fr 1fr 1fr 1fr;	
 	width: 100vw;
     height: 100vh;
     grid-template-areas:
@@ -89,5 +93,6 @@ html, body {
 	padding: 5px;
 	margin: 0px;
 	height: 30px;
+	margin-top: 13%;
 }
 
