@@ -1,0 +1,69 @@
+.post {
+    align-items: center;
+    justify-content: center;
+}
+#main-post{
+	grid-area: top-post;
+	width: 100%;
+    height: 100%;
+    background: url(../img/tlv_boardwalk.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+#post2{
+	grid-area: post-2;
+    background: url(../img/tokyo.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+#post3{
+	grid-area: post-3;
+    background: url(../img/paris.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+
+}
+
+#post4{
+	grid-area: post-4;
+    background: url(../img/krabi.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+#post5{
+	grid-area: post-5;
+    background: url(../img/great-wall.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+}
+
+.post-card{
+    width: auto;
+    height: auto;
+    background: rgba(18, 18, 17, 0.7);
+    border-radius: 10px;
+    align-items: center;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: seashell;
+    padding: 10px;
+    transition: transform 0.5s;
+}
+
+.post-card:hover{
+    transform: scale(0.95);
+    color: #ff9900; 
+}
+
+.post-card-description{
+    margin-top: 10px;
+    font-style: italic;
+    font-size: 12px;
+}
