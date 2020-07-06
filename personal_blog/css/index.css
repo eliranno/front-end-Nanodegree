@@ -1,51 +1,39 @@
 @import "posts.css";
 @import "nav-bar.css";
 @import "newsletter.css";
-
-*{
-	margin: 0px;
-	padding: 0px;
+@import "footer.css";
+* {
+    margin: 0px;
+    padding: 0px;
 }
 
-html, body {
+html,
+body {
     width: 100%;
-	height: 100%;
-	background: black;
+    height: 100%;
+    background: black;
 }
 
-#grid-layout{
-	display: grid;
-	grid-gap: 6px;
-	grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 60px 1fr 1fr 120px 30px;	
-	width: 100vw;
-	height: 100vh;
-	overflow: auto;
-    grid-template-areas:
-    "nav nav nav nav"
-    "top-post top-post post-2 post-3"
-    "top-post top-post post-4 post-5"
-    "newsletter newsletter newsletter newsletter"
-    "ft ft ft ft";
+#grid-layout {
+    display: grid;
+    grid-gap: 6px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 1fr 1fr 1fr 1fr 120px 30px;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    grid-template-areas: "nav" "top-post" "post-2" "post-3" "post-4" "post-5" "newsletter" "ft"
 }
 
-footer {
-	grid-area: ft;
-	justify-content: center;
-	padding: 5px;
-	margin: 0px;
-	height: 30px;
-	background-color: white;
-	display: inline-flex;
+@media (min-width: 600px) {
+    #grid-layout {
+        display: grid;
+        grid-gap: 6px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 60px 1fr 1fr 120px 30px;
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        grid-template-areas: "nav nav nav nav" "top-post top-post post-2 post-3" "top-post top-post post-4 post-5" "newsletter newsletter newsletter newsletter" "ft ft ft ft";
+    }
 }
-
-footer > p {
-	font-weight: bold;
-	margin-right: 10px;
-}
-
-.footer-icon{
-	padding-left: 5px;
-	color: #ff9900;
-}
-

@@ -1,0 +1,126 @@
+@import "nav-bar.css";
+@import "footer.css";
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body,
+div,
+img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    background: white;
+}
+
+#grid-layout {
+    display: grid;
+    grid-gap: 2px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 1fr 30px;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    grid-template-areas: "nav" "right-pane" "left-pane" "ft";
+}
+
+@media (min-width:600px) {
+    #grid-layout {
+        display: grid;
+        grid-gap: 2px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px 1fr 30px;
+        width: 100vw;
+        height: 100vh;
+        overflow: auto;
+        grid-template-areas: "nav nav" "left-pane right-pane" "ft ft";
+    }
+}
+
+#left-pane {
+    grid-area: left-pane;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-right: 3px solid black;
+    padding-right: 2px;
+    background: #0084ff;
+}
+
+.gallery-image {
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+#img1,
+#img2 {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+#right-pane {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px;
+}
+
+#post-head {
+    font-size: 15px;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+#post-body {
+    text-decoration-style: solid;
+    margin-left: 30px;
+}
+
+#right-pane>*:not(:last-child) {
+    display: block;
+    margin-bottom: 30px;
+}
+
+#post-body>*:not(:last-child) {
+    display: block;
+    margin-bottom: 30px;
+}
+
+#author-info {
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    display: flex;
+    flex-direction: row;
+    background: #fcdb03;
+    padding-bottom: 0px;
+    align-items: center;
+}
+
+.circle-frame {
+    margin-top: 10px;
+    width: 20%;
+}
+
+#author-discription {
+    width: 80%;
+    text-align: left;
+}
+
+#circle-image {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+}

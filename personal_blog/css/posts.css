@@ -2,45 +2,45 @@
     align-items: center;
     justify-content: center;
 }
-#main-post{
-	grid-area: top-post;
-	width: 100%;
+
+#main-post {
+    grid-area: top-post;
+    width: 100%;
     height: 100%;
     background: url(../img/tlv_boardwalk.jpg) no-repeat;
     background-size: cover;
     display: flex;
 }
 
-#post2{
-	grid-area: post-2;
+#post2 {
+    grid-area: post-2;
     background: url(../img/tokyo.jpg) no-repeat;
     background-size: cover;
     display: flex;
 }
 
-#post3{
-	grid-area: post-3;
+#post3 {
+    grid-area: post-3;
     background: url(../img/paris.jpg) no-repeat;
     background-size: cover;
     display: flex;
-
 }
 
-#post4{
-	grid-area: post-4;
+#post4 {
+    grid-area: post-4;
     background: url(../img/krabi.jpg) no-repeat;
     background-size: cover;
     display: flex;
 }
 
-#post5{
-	grid-area: post-5;
+#post5 {
+    grid-area: post-5;
     background: url(../img/great-wall.jpg) no-repeat;
     background-size: cover;
     display: flex;
 }
 
-.post-card{
+.post-card {
     width: auto;
     height: auto;
     background: rgba(18, 18, 17, 0.7);
@@ -57,13 +57,27 @@
     transition: transform 0.5s;
 }
 
-.post-card:hover{
+.post-card:hover {
     transform: scale(0.95);
-    color: #ff9900; 
+    color: #ff9900;
 }
 
-.post-card-description{
+.post-card-description {
     margin-top: 10px;
     font-style: italic;
     font-size: 12px;
+}
+
+#main-post-button {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-style: oblique;
+    background: #ff9900;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.5s;
+    color: black;
+    margin-top: 10px;
+    padding: 10px;
+    text-decoration: none;
 }
