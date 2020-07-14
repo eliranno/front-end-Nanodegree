@@ -69,7 +69,7 @@ function setActive() {
             }
         }
         // set corresponding header style
-        const active = document.querySelector('li[data-nav="' + section.id + '"]');
+        const active = document.querySelector('li[cc-nav="' + section.id + '"]');
         active.classList.add('active__link');
         // remove from other headers
         const headers = document.querySelectorAll('.menu__link');
