@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather Journal</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600,700|Ranga:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1 class="top-header-text">Travel App</h1>
+        </div>
+    </header>
+    <main>
+        <div class="search-bar">
+            <label for=city>City:</label>
+            <input type="text" id="city-input" name="city">
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date">
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date">
+            <button id="show-details-button" class="click-button">Show Trip Details</button>
+        </div>
+        <div class="modal" id="trip-details-modal">
+            <div class="modal-content">
+                <div class="left-modal-pane">
+                    <img src="" alt="city image" id="modal-trip-img">
+                </div>
+                <div class="right-modal-pane">
+                    <h3 id="modal-city-name">City Name</h3>
+                    <div id="trip-modal-details">
+                        <div class="trip-countdown">
+                        </div>
+                        <div class="trip-weather">
+                        </div>
+                        <div class="modal-controller">
+                            <button id="save-button">Save Trip</button>
+                            <button id="cancel-button">Cancel Trip</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="app.js" type="text/javascript"></script>
+
+</body>
+
+</html>

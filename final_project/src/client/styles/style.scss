@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.header-container {
+    height: 10vh;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #0562f7, #629af5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.top-header-text {
+    text-align: center;
+}
+
+.search-bar {
+    padding-top: 10px;
+    display: flex;
+    height: 5vh;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #fff700, #dbd51a);
+}
+
+.search-bar>* {
+    margin-right: 10px;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-height: 40%;
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template: "left right";
+}
+
+.left-modal-pane {
+    grid-area: left;
+}
+
+.right-modal-pane {
+    text-align: left;
+    grid-area: right;
+}
+
+#modal-city-name {
+    text-align: center;
+    margin-top: 10px;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+}
+
+.trip-countdown {
+    margin-top: 5px;
+}
+
+.trip-weather {
+    margin-top: 10px;
+}
+
+#modal-trip-img {
+    object-fit: cover;
+    width: 600px;
+    max-height: 600px;
+    margin: 20px;
+}
+
+.modal-controller {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.modal-controller>* {
+    margin: 10px;
+}
