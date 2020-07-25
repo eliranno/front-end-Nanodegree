@@ -47,7 +47,7 @@ generateButton.addEventListener('click', () => {
 
 
 
-function updateUI(data) {
+function amupdateUI(data) {
     let dateElement = document.getElementById('date');
     let tempElement = document.getElementById('temp');
     let contentElement = document.getElementById('content');
