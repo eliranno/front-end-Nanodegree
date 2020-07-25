@@ -70,4 +70,4 @@
         }
     });
 
-    //export { app }
+    export { app }
