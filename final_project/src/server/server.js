@@ -70,4 +70,4 @@
         }
     });
 
-    export { app }
+    module.exports.app = app;

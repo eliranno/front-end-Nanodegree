@@ -3,6 +3,19 @@ import { checkDates, showModal } from './js/ui'
 import { getGeoLocation, getWeatherForecast, getImageURL } from './js/requests'
 
 let showTripDetailsButton = document.querySelector("#show-details-button");
+init();
+
+function init() {
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/sw.js').then(registration => {
+                console.log('SW registered: ', registration);
+            }).catch(registrationError => {
+                console.log('SW registration failed: ', registrationError);
+            });
+        });
+    }
+}
 
 showTripDetailsButton.addEventListener("click", async(event) => {
     console.log("showTripDetailsButton was clicked");
